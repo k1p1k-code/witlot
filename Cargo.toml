@@ -1,6 +1,6 @@
 [workspace]
 resolver  = "3"
-members = ["creates/winlot", "creates/winlot-server", "creates/witlot-platform", "creates/witlot-platform/witlot-platform-host"]
+members = ["crates/winlot", "crates/winlot-server", "crates/witlot-platform", "crates/witlot-platform/witlot-platform-host"]
 
 [workspace.package]
 edition = "2024"
