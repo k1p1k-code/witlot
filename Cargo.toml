@@ -8,8 +8,8 @@ version = "0.1.0"
 
 
 [workspace.dependencies]
-witlot-platform = { path = "creates/witlot-platform" }
-witlot-platform-host = { path = "creates/witlot-platform/witlot-platform-host" }
+witlot-platform = { path = "crates/witlot-platform" }
+witlot-platform-host = { path = "crates/witlot-platform/witlot-platform-host" }
 
 tokio = {version = "1.53.2", features = ["full"]}
 wasmtime = "49.0.2"
