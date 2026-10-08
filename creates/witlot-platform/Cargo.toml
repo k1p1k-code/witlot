@@ -1,0 +1,8 @@
+[package]
+name = "witlot-platform"
+edition.workspace = true
+version.workspace = true
+
+[dependencies]
+witlot-platform-host.workspace = true
+wasmtime.workspace = true

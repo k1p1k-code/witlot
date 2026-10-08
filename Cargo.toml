@@ -1,0 +1,16 @@
+[workspace]
+resolver  = "3"
+members = ["creates/winlot", "creates/winlot-server", "creates/witlot-platform", "creates/witlot-platform/witlot-platform-host"]
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+
+
+[workspace.dependencies]
+witlot-platform = { path = "creates/witlot-platform" }
+witlot-platform-host = { path = "creates/witlot-platform/witlot-platform-host" }
+
+tokio = {version = "1.53.2", features = ["full"]}
+wasmtime = "49.0.2"
+wasmtime-wasi = "49.0.2"

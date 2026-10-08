@@ -1,0 +1,10 @@
+[package]
+name = "winlot"
+version.workspace = true
+edition.workspace = true
+default-run = "winlot"
+
+[dependencies]
+tokio.workspace = true
+witlot-platform-host.workspace = true
+witlot-platform.workspace = true

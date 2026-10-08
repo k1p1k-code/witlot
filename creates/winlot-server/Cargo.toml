@@ -1,0 +1,6 @@
+[package]
+name = "winlot-server"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]

@@ -1,0 +1,31 @@
+package platform:setting;
+
+interface default-setting {
+    variant field-type {
+        number(option<s32>),
+        str(option<string>),
+        float(option<f32>)
+    }
+
+    record field {
+        name: string,
+        description: string,
+        typesfield: field-type,
+    }
+
+    record manifest {
+        name: string,
+        description: string,
+        version: string,
+    }
+
+    get-settings-static: func() -> list<field>;
+    get-settings-dynamic: func() -> list<field>;
+    get-manifest: func() -> manifest;
+}
+
+world platform-world {
+    use default-setting.{field, field-type, manifest};
+
+    export default-setting;
+}
